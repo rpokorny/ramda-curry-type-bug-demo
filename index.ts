@@ -1,16 +1,16 @@
 import { curryN, identity } from "ramda";
 
-type UnionWithNull = ((s: string) => string | null) | null;
+type UnionWithNull = ((s: string) => string) | null;
 
-function fnThatTakesUnionWithNull(x: UnionWithNull, y: number) {
+function fnThatTakesUnionWithNull(x: UnionWithNull) {
   console.log(x);
 
   return x ? x('foo') : 'foo';
 }
 
-const curriedFn = curryN(2, fnThatTakesUnionWithNull);
+const curriedFn = curryN(1, fnThatTakesUnionWithNull);
 
-curriedFn(identity, 0);
+curriedFn(identity);
 
 // this fails to typecheck even though it is a valid way to use ramda
-curriedFn(null, 0);
+curriedFn(null);
