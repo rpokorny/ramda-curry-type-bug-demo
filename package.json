@@ -1,0 +1,15 @@
+{
+  "name": "ramda-curry-type-bug-demo",
+  "version": "1.0.0",
+  "description": "Demonstration of a bug in the @types/ramda type definitions",
+  "main": "index.js",
+  "repository": "https://github.com/rpokorny/ramda-curry-type-bug-demo",
+  "author": "Ross Pokorny <rpokorny@sonatype.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/ramda": "^0.27.34",
+    "ramda": "^0.27.1",
+    "typescript": "~3.5.0"
+  }
+}
