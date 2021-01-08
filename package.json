@@ -7,9 +7,12 @@
   "author": "Ross Pokorny <rpokorny@sonatype.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "@types/ramda": "^0.27.34",
     "ramda": "^0.27.1",
-    "typescript": "~3.5.0"
+    "typescript": "^4.1.3"
   }
 }
