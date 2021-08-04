@@ -11,7 +11,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@types/ramda": "^0.27.34",
+    "@types/ramda": "^0.27.44",
     "ramda": "^0.27.1",
     "typescript": "^4.1.3"
   }
